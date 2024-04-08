@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro portfólio</title>
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #101d17; /* Cor de fundo - verde neon escuro */
+            color: #00ff9b; /* Cor do texto - verde neon */
+        }
+
+        /* Estilos para o cabeçalho */
+        header {
+            background-color: #122b23; /* Cor de fundo - verde neon escuro */
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Estilos para a foto grande */
+        .hero-image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+
+        /* Estilos para a foto grande ao passar o mouse */
+        .hero-image:hover {
+            transform: translateY(-5px); /* Movimento para cima */
+        }
+
+        /* Estilos para as opções de contato */
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-options a {
+            margin: 0 10px;
+            color: #00ff9b; /* Cor dos links - verde neon */
+            text-decoration: none;
+        }
+
+        .contact-options a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para a seção de navegação inferior */
+        .navigation-bottom {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .navigation-bottom a {
+            color: #00ff9b; /* Cor dos links - verde neon */
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .navigation-bottom a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos para as seções */
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #101d17; /* Cor de fundo - verde neon escuro */
+            color: #00ff9b; /* Cor do texto - verde neon */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Estilos para imagens de fundo */
+        .background-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.2;
+        }
+
+        /* Estilos para a seção "Sobre Mim" */
+        #about {
+            position: relative;
+            margin-top: 50px;
+        }
+
+        #about p {
+            font-size: 18px;
+        }
+
+        #about:hover {
+            animation: pulse 1s infinite alternate; /* Animação de pulso */
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Estilos para o título "Sobre Mim" */
+        #about h2 {
+            font-size: 32px;
+            color: #6effbf; /* Verde neon mais claro */
+        }
+    </style>
+</head>
+<body>
+    <!-- Seção da foto grande -->
+    <header>
+        <img style="width: 50px; height: 62px;" class="hero-image" src="imagens/billie_imagem.jpeg" alt="Imagem Billie Eilish">
+        <!-- Opções de contato -->
+        <div class="contact-options">
+            <a href="https://api.whatsapp.com/send?phone=5599984195756" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/isa__chr17/" target="_blank">Instagram</a>
+            <a href="mailto:christina.s@acad.ifma.edu.br" target="_blank">Email</a>
+        </div>
+        
+    </header>
+    <br>
+    <button style="margin-left: 20px;" onclick="document.location='index.html'">Início</button>
+
+    <!-- Seção "Sobre Mim" -->
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Aqui você pode me conhecer um pouco mais.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <!-- Coloque informações de contato ou direitos autorais aqui -->
+    </footer>
+
+    <!-- Imagens de fundo em movimento -->
+    <img class="background-img" src="background1.jpg" alt="">
+    <img class="background-img" src="background2.jpg" alt="">
+    <!-- Adicione quantas imagens de fundo desejar -->
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes e Filmes</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .gallery, .videos {
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        /* Estilos para imagens */
+        .image-column {
+            width: 30%;
+            display: inline-block;
+            margin: 1%;
+            vertical-align: top;
+        }
+
+        .image-column img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Estilos para vídeos */
+        .video-column {
+            width: 30%;
+            display: inline-block;
+            margin: 1%;
+            vertical-align: top;
+        }
+
+        .video-column iframe {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus Gostos</h1>
+
+
+</script>
+</head>
+<body>
+<table>
+<tr>
+    <td><img style="width: 600px; height: 360px; margin-left: 100px;margin-right: 50px;" src="imagens/img_billie2.png" onclick="expandMedia(event)"></td>
+    <td>
+        <video controls onclick="expandMedia(event)">
+            <source style="margin-left: 20px;" src="videos/Video_Billie_FRoxo.mp4" type="video/mp4">
+        </video>
+    </td>
+</tr>
+<tr>
+    <td><img style="width: 600px; height: 360px; margin-left: 100px;margin-right: 50px; margin-top: 50px;" src="imagens/img_billie.jpg" onclick="expandMedia(event)"></td>
+    <td>
+        <video controls onclick="expandMedia(event)">
+            <source src="videos/VideoBillieComida.mp4" type="video/mp4">
+        </video>
+    </td>
+</tr>
+<tr>
+    <td><img style="width: 600px; height: 360px; margin-left: 100px;margin-right: 50px;margin-top: 25px;" src="imagens/img_billie3.jpg" onclick="expandMedia(event)"></td>
+    <td >
+        <video controls onclick="expandMedia(event)">
+            <source src="videos/VideoBillieFBranco.mp4" type="video/mp4">
+        </video>
+    </td>
+</tr>
+</table>
+    
+</body>
+</html>
